@@ -1,7 +1,3 @@
-# This is the initial template for segunmo/homebrew-meriadoc/Formula/meriadoc.rb
-# The release workflow overwrites this file automatically on each release.
-# SHA256 hashes are placeholders until the first release runs.
-
 class Meriadoc < Formula
   desc "Discover, validate, and run tasks, jobs, and shells from project spec files"
   homepage "https://github.com/segunmo/meriadoc"
@@ -11,10 +7,10 @@ class Meriadoc < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/segunmo/meriadoc/releases/download/v0.1.0/meriadoc-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_ARM64"
+      sha256 "dist/meriadoc-v0.1.0-aarch64-apple-darwin.tar.gz.sha256:257df56960a8a422e7425d9f9747d5dffd5e3df322b4e81f61fed7b0954e3c05"
     else
       url "https://github.com/segunmo/meriadoc/releases/download/v0.1.0/meriadoc-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_X86_64"
+      sha256 "dist/meriadoc-v0.1.0-x86_64-apple-darwin.tar.gz.sha256:e44a4485eb99731c5d730d7aef8dbb982896819eb0d2c9de7cf4d5c97870597e"
     end
   end
 
